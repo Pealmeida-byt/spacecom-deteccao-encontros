@@ -1,0 +1,29 @@
+{
+  "name": "deteccao-encontros-spacecom",
+  "version": "1.0.0",
+  "description": "Desafio Trainee Tech Spacecom 2027 — detecção de encontros (genéricos, de facção e de medida protetiva) a partir de dados de geolocalização.",
+  "author": "Pedro Almeida",
+  "license": "UNLICENSED",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "prepare": "tsc -p tsconfig.json",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/src/cli.js",
+    "tudo": "npm run build && node dist/ferramentas/tudo.js",
+    "baixar": "npm run build && node dist/ferramentas/baixar-datasets.js",
+    "validar": "npm run build && node dist/ferramentas/validar.js",
+    "conferir": "npm run build && node dist/ferramentas/conferir.js",
+    "diagnostico": "npm run build && node dist/ferramentas/diagnostico.js",
+    "benchmark": "npm run build && node dist/ferramentas/benchmark.js",
+    "test": "npm run build && node dist/ferramentas/testar.js",
+    "empacotar": "npm run build && node dist/ferramentas/empacotar.js"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "typescript": "5.9.3"
+  }
+}

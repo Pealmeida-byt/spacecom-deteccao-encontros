@@ -1,0 +1,9 @@
+node_modules/
+dist/
+entrega/
+relatorios/
+data/*
+!data/.gitkeep
+*.parcial
+.DS_Store
+Thumbs.db
